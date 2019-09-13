@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AddDoctor</string>
+    <string name="your_message">Enter Physician name</string>
+    <string name="your_id">Enter Physician Medical ID</string>
+    <string name="doc_assist">someone@gmail.com</string>
+    <string name="assist_no">Enter Valid Contact Number</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world</string>
+    <string name="choose_chocolate">Choose Chocolate</string>
+    <string-array name="chocolate">
+        <item></item>
+        <item>Cardilogist</item>
+        <item>Clinical Geneticist</item>
+        <item>Consultant Dental Surgeon</item>
+        <item>Consultant Physician</item>
+    </string-array>
+</resources>

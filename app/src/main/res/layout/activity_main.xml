@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:background="@drawable/doc2"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Physician Name:"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout2" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal|top"
+            android:hint="@string/your_message"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Medical ID:"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout2"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="40dp"
+            android:hint="@string/your_id"
+            android:inputType=""
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Assist Email:"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout3"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linearLayout3"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="40dp"
+            android:hint="@string/doc_assist"
+            android:inputType=""
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Assist Contact No:"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout4"/>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linearLayout4"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="40dp"
+            android:hint="@string/assist_no"
+            android:inputType="number"
+            android:text="" />/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout5"
+        android:layout_marginTop="320dp">
+        <TextView
+            android:text="Specialization"
+            android:id="@+id/txtChoco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"/>
+        <Spinner
+            android:id="@+id/chocolate_Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:entries="@array/chocolate"
+            android:prompt="@string/choose_chocolate"
+            android:layout_toRightOf="@id/txtChoco"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"></Spinner>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/round"
+        android:text="REGISTER"
+
+
+        android:textColor="#FFF" />
+</RelativeLayout>
